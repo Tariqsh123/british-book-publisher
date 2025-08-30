@@ -1890,7 +1890,7 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: .5rem !important
+    margin-bottom: .5rem !important;
 }
 
 footer ul li i:before {
@@ -1990,6 +1990,28 @@ footer .social li a i:hover {
     footer ul {
         padding: 8px 0 !important
     }
+    footer p{
+        font-size: small !important;
+    }
+    footer .p-text {
+    font-size: small !important;
+    }
+    footer .call-us {
+    font-size: small !important;
+    } 
+    footer ul li a {
+        font-size: small !important
+    }
+    .footer-bottom span {
+    font-size: small ;
+}
+footer .social li a i {
+    height: 30px;
+    width: 30px;
+}
+}
+footer .h5 {
+    font-size: large !important;
 }
 
 .modal {
