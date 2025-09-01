@@ -59,7 +59,7 @@
 
                     <!-- Right: CTA Button -->
                     <div class="col-lg-3 text-end">
-                        <a href="#" class="btn-chat">Submission</a>
+                        <a href="free-quote.html" class="btn-chat">Get Free Quote</a>
                     </div>
 
                 </div>
@@ -68,7 +68,7 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a href="#" aria-label="navigate to home page">
+                <a href="index.html" aria-label="navigate to home page">
                     <img src="images/british-books-publishers.webp" class="img-fluid d-none" alt="" title="" width="347"
                         height="99">
                 </a>
@@ -80,10 +80,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Home</a>
+                            <a class="nav-link" href="index.html"> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> About us </a>
+                            <a class="nav-link" href="about-us.html"> About us </a>
                         </li>
                         <li class="nav-item dropdown">
                             <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
@@ -148,15 +148,16 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews </a>
+                            <a class="nav-link" href="reviews.html">Reviews </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Contact us </a>
+                            <a class="nav-link" href="contact-us.html"> Contact us </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
 
     </header>
     
@@ -188,9 +189,51 @@
       <h3>Bussiness Book Publishing Starts Here</h3>
       <form>
         <label>Select Genre:</label>
-        <select>
-          <option>Select Genre</option>
-        </select>
+        <select name="genre" class="form-control" required>
+  <option value="">Select Genre</option>
+  <option value="Action-Adventure">Action-Adventure</option>
+  <option value="Celebrity Biographies">Celebrity Biographies</option>
+  <option value="Classical Drama">Classical Drama</option>
+  <option value="Comparative Religion">Comparative Religion</option>
+  <option value="Contemporary Romance">Contemporary Romance</option>
+  <option value="Cookbooks">Cookbooks</option>
+  <option value="Crime">Crime</option>
+  <option value="Cyberpunk">Cyberpunk</option>
+  <option value="Dystopian">Dystopian</option>
+  <option value="Fairy Tale Retellings">Fairy Tale Retellings</option>
+  <option value="Fantasy">Fantasy</option>
+  <option value="Gothic Horror">Gothic Horror</option>
+  <option value="Historical Fiction">Historical Fiction</option>
+  <option value="Historical Romance">Historical Romance</option>
+  <option value="Horror">Horror</option>
+  <option value="Literary Fiction">Literary Fiction</option>
+  <option value="Manga">Manga</option>
+  <option value="Memoir">Memoir</option>
+  <option value="Motivational">Motivational</option>
+  <option value="Mystery/Thriller">Mystery/Thriller</option>
+  <option value="Paranormal">Paranormal</option>
+  <option value="Personal Development">Personal Development</option>
+  <option value="Philosophy">Philosophy</option>
+  <option value="Picture Books">Picture Books</option>
+  <option value="Political Biographies">Political Biographies</option>
+  <option value="Psychological Horror">Psychological Horror</option>
+  <option value="Psychological Thriller">Psychological Thriller</option>
+  <option value="Psychology">Psychology</option>
+  <option value="Religion/Spirituality">Religion/Spirituality</option>
+  <option value="Romance">Romance</option>
+  <option value="Science Fiction">Science Fiction</option>
+  <option value="Self-Help">Self-Help</option>
+  <option value="Slam Poetry">Slam Poetry</option>
+  <option value="Spiritual Guides">Spiritual Guides</option>
+  <option value="Superhero Comics">Superhero Comics</option>
+  <option value="Survival">Survival</option>
+  <option value="Suspense">Suspense</option>
+  <option value="Traditional Poetry">Traditional Poetry</option>
+  <option value="Travel">Travel</option>
+  <option value="Urban Fantasy">Urban Fantasy</option>
+  <option value="Other">Other</option>
+</select>
+
 
         <label>What can be a title of the Book?</label>
         <input type="text" placeholder="Write The Book Title" />
@@ -405,224 +448,268 @@
     </section>
 
    
-    <section class="testimonials text-lg-start text-center">
-        <div class="container">
-            <hr class="border-t">
-            <span class="sub-title text-center">Words Of Appreciation</span>
-            <h2 class="h1">Honest Reviews About Our Book Publishing Assistance</h2>
-            <p class="text-center">These reviews from British authors will help you evaluate our book publishing
-                services in a better way.</p>
+    <!-- Book CArousel  -->
+
+<div id="book-carousel-heading-container">
+  <h2>Your Book Deserves a Global Audience</h2>
+</div>
+
+<div id="book-carousel-main-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/banner-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-2.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-3.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-4.png" alt=""></div>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<style>
+ 
+</style>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 15,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    grabCursor: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      601: {
+        slidesPerView: 3,
+      }
+    },
+    on: {
+      init: function () {
+        this.update();
+      }
+    }
+  });
+  swiper.on('slideChangeTransitionEnd', () => {
+    document.querySelectorAll('.swiper-slide').forEach(slide => slide.style.zIndex = 1);
+    const active = document.querySelector('.swiper-slide-active');
+    if (active) active.style.zIndex = 99;
+  });
+</script>
+
+
+
+<!-- Book CArousel  -->
+
+  <!-- Testimonial -->
+     <section id="review-heading-section">
+  <div class="review-heading-container">
+   
+    <h2 class="review-heading-h2"> <span class="review-heading-span">15K+ Satisfied</span> Clients of Our Amazon Automation Solutions</h2>
+    <p class="review-heading-p">Without any technical or design expertise.</p>
+  </div>
+</section>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
         </div>
-        <div class="container-fluid">
-            <div class="splide reviews-slide">
-                <div class="splide__track">
-                    <div class="splide__list">
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/the-girl-who-was-part-cat.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I had a great time working with these publishers. They made me feel more
-                                        confident in my book and guided me through every step of the publication
-                                        process. The publishing team showed great dedication to make it a success."</p>
-                                    <span class="name">J. J. Anderson</span>
-                                    <span class="genre">The Girl Who Was Part Cat | Part Chameleon</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/the-spirit-of-cassious-house.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I am thankful to each and every individual who helped me make this paranormal
-                                        world with chilling encounters a reality. They stood with me throughout and
-                                        simplified all the publishing challenges. I am eager for you all to read my
-                                        book."</p>
-                                    <span class="name">Linda Key</span>
-                                    <span class="genre">The Spirit Of Cassious House</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/jupiters-gate.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I was working on this story for quite some time. The target audience was small
-                                        children. I had no idea that Amazon would have so many guidelines for a
-                                        children’s book. Thankfully, these publishers were there to make my book a
-                                        success."</p>
-                                    <span class="name">Dan Whelan</span>
-                                    <span class="genre">Jupiter’s Gate</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/mummy-wont-ppen-her-eyes.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"It turned out to be a great decision to hire these book publishers. They are the
-                                        most supportive professionals I have ever worked with. Without them, my literary
-                                        dream would have never been a reality. I owe them some of the credit for my
-                                        success."
-                                    </p>
-                                    <span class="name">Phyllida Anam-Aire</span>
-                                    <span class="genre">Mummy Won’t Open Her Eyes</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/our-last-pilgrimage.webp"
-                                    class="img-fluid " alt="" title="">
-                                <div class="content">
-                                    <p>"I am grateful to the whole team of BritishBookPublishers.co.uk for helping me
-                                        share my personal experiences of spiritual adventure with the world. I hope
-                                        people can reconnect with Jesus and regain their faith in him. Thank you for
-                                        your services."</p>
-                                    <span class="name">Nanny Soares</span>
-                                    <span class="genre">Our Last Pilgrimage: The Journey 2 Freedom</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/tales-of-love.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"You cannot find a better team of publishing experts in the UK. They made my love
-                                        story of Liza and Dan extra special with their flawless and professional
-                                        publishing services. I highly recommend them for their excellence. A must-try
-                                        for every author."
-                                    </p>
-                                    <span class="name">KN Kamori</span>
-                                    <span class="genre">Tales Of Love</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/villiams-quest.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"Overall, it was a wonderful experience to work with such a dedicated team of
-                                        book publishing experts. The exciting journey of Sir Villiam is out there for
-                                        you all. If we talk about this firm, I would love to hire them again for my
-                                        future releases."</p>
-                                    <span class="name">Rohit Kumar Rathi</span>
-                                    <span class="genre">Villiam’s Quest</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/hey-nana-where-is-my-baby-sister.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"This publication agency has some of the most supportive and helpful individuals
-                                        on board. They are always ready to answer all your concerns and leave no stone
-                                        unturned to make their customers happy and satisfied with their work."</p>
-                                    <span class="name">Debbie Abu-El-Jibien</span>
-                                    <span class="genre">Hey Nana, Where Is My Baby Sister?</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/survival.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I am here with a showdown between the oppressed and the oppressor that was
-                                        published carefully for the global audience by BritishBookPublishers.co.uk. They
-                                        did an excellent job and handled the entire process quite well."
-                                    </p>
-                                    <span class="name">Michael Leckie</span>
-                                    <span class="genre">Survival</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/virginia-the-heart-of-glass.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I am so happy that my book has been published online, and the response has been
-                                        excellent. This would not have been possible without their support and guidance.
-                                        For me, they are hands down the best publishers in the country."
-                                    </p>
-                                    <span class="name">Cynthia Nouhra</span>
-                                    <span class="genre">Virginia & The Heart Of Glass</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/emotions-memories-in-poetry.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"There are so many things to like about this book publication agency. From their
-                                        affordable packages to timely services and a highly supportive team, they surely
-                                        tick all the boxes that an author or a poet looks for in a self-publishing
-                                        website."
-                                    </p>
-                                    <span class="name">John Bell</span>
-                                    <span class="genre">Emotions & Memories In Poetry</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/swan-club-book-of-heavenly-guided-poems.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"This poetry collection is pretty close to my heart as it is all about the divine
-                                        guidance I received from the Heavenly Father. I can’t thank these publishers
-                                        enough for handling it with so much care and respect. They also helped me format
-                                        the book."
-                                    </p>
-                                    <span class="name">Sabrina Naqvi</span>
-                                    <span class="genre">Swan Club: Book Of Heavenly Guided Poems</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/the-darkened-scent.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"These publishers are immensely talented and know how to cater to every specific
-                                        genre. The niche of my book was a bit different, and they still aced the
-                                        publication process. Their knowledge of publishing limitations is pretty
-                                        impressive."
-                                    </p>
-                                    <span class="name">The Hairy Arse Welder</span>
-                                    <span class="genre">The Darkened Scent Of Macabre Love And Passion</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="reviews">
-                                <img src="https://cdn.britishbookpublishers.co.uk/assets/frontend/images/slider-image/the-young-professional-guide-to-success.webp"
-                                    class="img-fluid" alt="">
-                                <div class="content">
-                                    <p>"I have so much respect and admiration in my heart for these publishers because
-                                        of the efforts they have put in for my book. Their hard work made it possible
-                                        for me to release my book online and inspire so many individuals from the retail
-                                        industry."
-                                    </p>
-                                    <span class="name">Zaid Moghrabi</span>
-                                    <span class="genre">Thrive In Retail: The Young Professional’s Guide To
-                                        Success</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
         </div>
-    </section>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    const $track = $(".carousel-track");
+    let $cards = $(".review-card");
+    let cardWidth = $cards.outerWidth(true);
+    let index = 1; 
+    let isDragging = false, startX, startTranslate, currentX;
+    let animationFrame;
+    $track.prepend($cards.last().clone());
+    $track.append($cards.first().clone());
+    $cards = $(".review-card");
+    cardWidth = $cards.outerWidth(true);
+    setTranslate(-cardWidth * index);
+    function getTranslateX() {
+        const style = window.getComputedStyle($track[0]);
+        const matrix = new WebKitCSSMatrix(style.transform);
+        return matrix.m41;
+    }
+    function setTranslate(x, withTransition = false) {
+        $track.css("transition", withTransition ? "transform 0.3s ease" : "none");
+        $track.css("transform", `translateX(${x}px)`);
+    }
+    function snapToCard() {
+        let moveX = getTranslateX();
+        let dragDistance = moveX - startTranslate;
+        let threshold = cardWidth / 4;
+        if(dragDistance < -threshold) index++;
+        else if(dragDistance > threshold) index--;
+        setTranslate(-index * cardWidth, true);
+        $track.one("transitionend", function(){
+            if(index === 0){ 
+                index = $cards.length - 2;
+                setTranslate(-index * cardWidth);
+            } 
+            else if(index === $cards.length - 1){ 
+                index = 1;
+                setTranslate(-index * cardWidth);
+            }
+        });
+    }
+    $track.on("mousedown touchstart", function(e){
+        isDragging = true;
+        startX = e.pageX || e.originalEvent.touches[0].pageX;
+        startTranslate = getTranslateX();
+        cancelAnimationFrame(animationFrame);
+    });
+    $(document).on("mousemove touchmove", function(e){
+        if(!isDragging) return;
+        currentX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
+        e.preventDefault(); 
+        function update() {
+            setTranslate(startTranslate + currentX);
+            if(isDragging) animationFrame = requestAnimationFrame(update);
+        }
+        cancelAnimationFrame(animationFrame);
+        animationFrame = requestAnimationFrame(update);
+    });
+    $(document).on("mouseup touchend", function(){
+        if(!isDragging) return;
+        isDragging = false;
+        cancelAnimationFrame(animationFrame);
+        snapToCard();
+    });
+    $(window).on("resize", function(){
+        cardWidth = $(".review-card").outerWidth(true);
+        setTranslate(-index * cardWidth);
+    });
+});
+</script>
     
     <footer>
         <div class="container">
@@ -660,18 +747,15 @@
                         <div class="col-12 col-md-4">
                             <span class="h5">Company</span>
                             <ul>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Home </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> About Us </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Contact Us </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Reviews </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Free Quote </a>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="index.html"> Home </a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="about-us.html"> About Us </a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="contact-us.html"> Contact Us </a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="reviews.html"> Reviews </a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="free-quote.html"> Free Quote </a>
                                 </li>
-                                <li class="visually-hidden"><i class="fa-solid fa-chevron-right"></i><a href="#">
-                                        Pricing </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Sitemap </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Privacy Policy
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="privacy.html"> Privacy Policy
                                     </a></li>
-                                <li><i class="fa-solid fa-chevron-right"></i><a href="#"> Terms & Conditions </a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a href="terms.html"> Terms & Conditions </a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-md-4"><span class="h5">Services</span>
