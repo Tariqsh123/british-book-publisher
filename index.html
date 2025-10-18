@@ -179,8 +179,7 @@
         </p>
       </div>
 
-      <!-- HIDDEN on mobile, visible only on large screens -->
-      <div class="col-lg-4 bg d-none d-lg-block">
+      <div class="col-lg-4 bg">
         <p>Every Author We’ve Published</p>
         <span>Has Made Waves</span>
         <p>Yours Deserves to Be Next!</p>
@@ -200,6 +199,16 @@
     </div>
   </div>
 </section>
+
+<!-- Responsive Media Query -->
+<style>
+  /* Hide the side content on mobile screens */
+  @media (max-width: 991.98px) {
+    .about-us .bg {
+      display: none !important;
+    }
+  }
+</style>
 
 
     <section class="publishers text-lg-start text-center">
