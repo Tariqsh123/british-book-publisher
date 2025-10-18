@@ -592,7 +592,7 @@ width: 100%;
 
 .how-works-list li {
     font-size: medium !important;
-    height: 40px;
+    height: fit-content;
     padding-left: 28px;
     position: relative;
     margin: 0;
