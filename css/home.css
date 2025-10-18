@@ -2657,8 +2657,7 @@ footer .h5 {
 
 .about-us .context p {
     margin-bottom: 33px !important;
-    max-height: 275px;
-    min-height: 75px
+    height: fit-content;
 }
 
 .about-us .context hr {
@@ -3038,6 +3037,9 @@ footer .h5 {
 }
 
 @media (max-width:767px) {
+    .about-us{
+        padding-bottom: 0;
+    }
     .home-slider .splide__arrow--next {
         right: 0
     }
