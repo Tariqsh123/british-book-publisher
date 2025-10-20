@@ -2554,7 +2554,9 @@ footer .h5 {
 }
 
 .selling-content .h1 {
-    margin-bottom: 30px !important
+    margin-bottom: 30px !important;
+    width: 100%;
+    text-align: center;
 }
 
 .selling-content .gx-5 {
@@ -3006,7 +3008,8 @@ footer .h5 {
 
     .publishers .profit .btn-order {
         margin-top: 15px !important;
-        padding: 6px 46px !important
+        font-size: 16px !important;
+        padding: 10px !important
     }
 
     .publishers .profit .sub-title {
@@ -3088,6 +3091,10 @@ footer .h5 {
         margin: auto !important;
         padding: 42px 0 !important
     }
+    .about-us .row .btn-chat{
+        font-size: 16px;
+        padding: 10px !important;
+    }
 }
 .collapsing {
   transition: height 0.2s ease !important; 
@@ -3102,6 +3109,10 @@ footer .h5 {
 @media (max-width:600px) {
 .logo-row img {
   width: 20%;   
+}
+.btn-chat, .btn-order{
+    font-size: 16px !important;
+    padding: 10px !important;
 }
 }
 
@@ -3212,6 +3223,7 @@ footer .h5 {
 
   .review-heading-span {
     color: #008474;
+    font-size: 30px !important;
   }
 
   .review-heading-h2 {
@@ -3240,7 +3252,7 @@ footer .h5 {
   @media (max-width: 480px) {
     
         .review-heading-h2 {
-        font-size: 2rem;
+        font-size: 30px !important;
         width: 95%;
         padding: 0 10px;
     }
@@ -3306,5 +3318,35 @@ footer .h5 {
   .review-card {
     flex: 0 0 95%;
     margin: 0px;
+  }
+  .about-us h1{
+    font-size: 30px !important;
+  }
+  .publishers .profit .h1{
+    font-size:  30px !important;
+  }
+  .h2{
+    font-size: 30px !important;
+  }
+  .best-publishers .h1{
+    font-size: 30px !important;
+  }
+  .home-banner h2{
+    font-size: 30px !important;
+  }
+  .cta-home .h1{
+    font-size: 30px !important;
+  }
+  #book-carousel-heading-container h2{
+    font-size: 30px !important;
+  }
+  .review-heading-span{
+    font-size: 20px !important;
+  }
+  .selling-content .h1{
+    font-size: 30px !important;
+  }
+  #faq h2{
+    font-size:  30px !important;
   }
 }
