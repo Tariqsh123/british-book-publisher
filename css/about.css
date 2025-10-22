@@ -2072,25 +2072,74 @@ footer .social li a i:hover {
     display: block;
     margin: 40px auto 60px
 }
-
 .our-values {
-    padding: 40px 0 60px
+  padding: 40px 0 60px;
 }
 
 .our-values .p-text {
-    font-size: 16px !important;
-    line-height: 34px !important;
-    padding-bottom: 15px;
-    text-align: center
+  font-size: 16px !important;
+  line-height: 34px !important;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 .our-values .h6 {
-    margin-bottom: 6px !important
+  margin-bottom: 6px !important;
+  font-weight: 700;
+  display: block;
 }
 
 .our-values .gx-5 {
-    --bs-gutter-x: 12rem
+  --bs-gutter-x: 12rem;
 }
+
+/* BOX LAYOUT */
+.our-values .value-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.our-values .value-content img {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.our-values .value-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 768px) {
+  .our-values .value-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-values .value-content img {
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .our-values .value-text {
+    text-align: center;
+  }
+
+  .our-values .gx-5 {
+    --bs-gutter-x: 2rem;
+  }
+}
+
 
 .our-team .gy-4 {
     --bs-gutter-y: 3.5rem
@@ -2136,6 +2185,7 @@ footer .social li a i:hover {
 
 @media (max-width:575px) {
     .about-publishers {
+        padding-bottom: 0;
         background-color: #e0f2e8
     }
 
