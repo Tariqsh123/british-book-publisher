@@ -3273,9 +3273,9 @@ footer .h5 {
     will-change: transform;
 }
 .review-card {
-    background: white;
+    background: linear-gradient(90deg, white, #d9d9d9);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     padding: 20px;
     cursor: pointer;
     margin: 0 10px;
