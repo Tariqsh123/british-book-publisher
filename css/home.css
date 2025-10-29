@@ -1687,7 +1687,7 @@ span {
 }
 
 .main-header .top-bar .btn-chat {
-    border: 2px solid #fff;
+    border: 2px solid #0066cb;
     margin-right: 0;
     margin-top: 0;
     padding: 6px 28px !important
@@ -1700,7 +1700,7 @@ span {
 }
 
 .main-header .navbar {
-    background: #fff;
+    background: #0066cb;
     padding: 2px 0
 }
 
@@ -1852,6 +1852,9 @@ span {
     header .navbar .container-fluid .navbar-collapse .navbar-nav .dropdown-menu .dropdown-divider {
         margin: 0
     }
+    .main-header .navbar {
+    background: #fff;
+}
 }
 
 footer {
