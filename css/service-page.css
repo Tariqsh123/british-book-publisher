@@ -40,7 +40,7 @@
   margin-bottom: 15px;
   font-family: Urbanist;
   font-weight: 700;
-  color: #008474;
+  color: #0066cb;
 
 }
 
@@ -61,7 +61,7 @@
 }
 .left ul li span{
     all: unset !important;
-    color: #008474 !important;
+    color: #0066cb !important;
 }
 
 .right {
@@ -106,7 +106,7 @@ form textarea {
 }
 
 form button {
-  background: #008474;
+  background: #0066cb;
   color: white;
   padding: 12px;
   border: none;
@@ -118,7 +118,9 @@ form button {
 }
 
 form button:hover {
-  background: #006d60;
+  background: #fff;
+  border: 2px solid #0066cb;
+  color: #0066cb;
 }
 
 .rating {
@@ -269,7 +271,7 @@ form button:hover {
 
 .text h3 {
   font-size: 20px;
-  color: #008474;
+  color: #0066cb;
   margin-bottom: 15px;    
   font-family: Noto Sans;
 }
@@ -288,7 +290,7 @@ form button:hover {
 }
 
 .cta-btn {
-  background: #008474;
+  background: #0066cb;
   color: #fff;
   padding: 8px 22px;
   border-radius: 30px;
@@ -298,20 +300,22 @@ form button:hover {
   font-size: 16px;
 }
 .cta-btn:hover {
-  background: #006d60;
+  background: #fff;
+  border: 2px solid #0066cb;
+  color: #0066cb;
 }
 
 .phone {
   font-size: 16px;
   border-radius: 30px;
   color: #0f172a;
-  border: 1px solid #008474;
+  border: 1px solid #0066cb;
   padding: 8px 20px;
   text-decoration: none;
   transition: 0.3s;
 }
 .phone:hover {
-  background: #008474;
+  background: #0066cb;
   color: #fff;
 }
 
@@ -361,7 +365,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #008474;
+    background-color: #0066cb;
 }
 .hundred-percent-inner{
     height: 95%;
@@ -481,7 +485,7 @@ width: 100%;
 }
 .publishing-company-text li::before {
     content: "•";
-    color: #008474;
+    color: #0066cb;
     font-weight: bolder;
     font-size: 40px;
     position: absolute;
@@ -499,7 +503,7 @@ width: 100%;
 }
 .publishing-company-btn {
   padding: 12px 20px;
-  background: #008474;
+  background: #0066cb;
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
@@ -509,12 +513,12 @@ width: 100%;
     color: white;
 }
 .publishing-company-phone {
-  border: 1px solid #008474;
-  color: #008474;
+  border: 1px solid #0066cb;
+  color: #0066cb;
   background-color: transparent;
 }
 .publishing-company-phone:hover{
-    background-color: #008474;
+    background-color: #0066cb;
 }
 .publishing-company-images {
   flex: 1;
@@ -607,7 +611,7 @@ width: 100%;
 
 .how-works-list li::before {
   content: "✔";
-  color: #008474; /* red tick */
+  color: #0066cb; /* red tick */
   font-weight: bold;
   position: absolute;
   left: 0;
