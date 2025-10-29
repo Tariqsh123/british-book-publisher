@@ -1049,7 +1049,7 @@ textarea.form-control {
 
 .navbar-toggler {
     background-color: transparent;
-    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border: 1px solid white;
     border-radius: var(--bs-navbar-toggler-border-radius);
     color: var(--bs-navbar-color);
     font-size: var(--bs-navbar-toggler-font-size);
@@ -1805,7 +1805,7 @@ span {
     }
 
     header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
-        filter: brightness(100)
+        /* filter: brightness(100) */
     }
 
     header .navbar .container-fluid .navbar-collapse {
