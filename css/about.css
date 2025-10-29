@@ -1362,7 +1362,7 @@ span {
 }
 
 .main-header .top-bar {
-    background: #6599ff;
+    background: #fff;
     padding: 30px 0
 }
 
@@ -1380,19 +1380,19 @@ span {
 }
 
 .main-header .top-bar .description {
-    border-left: 1px solid hsla(0, 0%, 100%, .678);
-    color: #fff !important;
+     border-left: 1px solid hsla(0, 0%, 27%, 0.678);
+    color: #000 !important;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px !important;
     margin-bottom: 0 !important;
-    padding-left: 10px;
-    width: 285px
+    padding-left: 10px;;
+
 }
 
 .main-header .top-bar .chat-us,
 .main-header .top-bar .message {
-    color: #fff !important;
+    color: black !important;
     display: inline-block;
     font-size: 14px;
     font-size: 16px;

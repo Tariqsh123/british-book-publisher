@@ -1648,7 +1648,7 @@ span {
 }
 
 .main-header .top-bar {
-    background: #6599ff;
+    background: #fff;
     padding: 30px 0
 }
 
@@ -1666,8 +1666,8 @@ span {
 }
 
 .main-header .top-bar .description {
-    border-left: 1px solid hsla(0, 0%, 100%, .678);
-    color: #fff !important;
+    border-left: 1px solid hsla(0, 0%, 27%, 0.678);
+    color: #000 !important;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px !important;
@@ -1678,7 +1678,7 @@ span {
 
 .main-header .top-bar .chat-us,
 .main-header .top-bar .message {
-    color: #fff !important;
+    color: #000 !important;
     display: inline-block;
     font-size: 14px;
     font-size: 16px;
@@ -1859,7 +1859,7 @@ footer {
     padding: 70px 0
 }
 footer img{
-    height: 100px !important;
+    height: 150px !important;
     width: auto !important;
 }
 footer .h5 {
