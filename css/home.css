@@ -1854,11 +1854,12 @@ span {
     }
     .main-header .navbar {
     background: #fff;
+    box-shadow: 1px 1px 5px gainsboro;
 }
 }
 
 footer {
-    background-color: #ebefed;
+    background-color: #0066cb1a;
     padding: 70px 0
 }
 footer img{
@@ -1879,16 +1880,16 @@ footer .p-text {
 
 footer .call-us {
     color: #000 !important;
-    -webkit-text-decoration: underline #ebefed !important;
-    text-decoration: underline #ebefed !important
+    -webkit-text-decoration: underline #0066cb1a !important;
+    text-decoration: underline #0066cb1a !important
 }
 
 footer .call-us span {
     color: #0066cb !important;
     display: inline-block;
     font-weight: 700;
-    -webkit-text-decoration: underline #ebefed;
-    text-decoration: underline #ebefed
+    -webkit-text-decoration: underline #0066cb1a;
+    text-decoration: underline #0066cb1a
 }
 
 footer ul {
