@@ -1871,7 +1871,7 @@ footer .h5 {
 }
 
 footer .p-text {
-    color: #07302b !important;
+    color: #0066cb !important;
     font-size: 16px;
     font-weight: 800;
     margin-bottom: 10px !important
@@ -1884,7 +1884,7 @@ footer .call-us {
 }
 
 footer .call-us span {
-    color: #07302b !important;
+    color: #0066cb !important;
     display: inline-block;
     font-weight: 700;
     -webkit-text-decoration: underline #ebefed;
