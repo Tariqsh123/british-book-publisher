@@ -1661,8 +1661,8 @@ span {
 
 .main-header .top-bar .topbar-right img {
     height: 100%;
-    max-width: max-content;
-    width: 231px
+    /* max-width: max-content; */
+    width: 300px
 }
 
 .main-header .top-bar .description {
@@ -1798,7 +1798,7 @@ span {
         max-width: 200px;
         -o-object-fit: scale-down;
         object-fit: scale-down */
-        height: 70px;
+        height: 80px;
         width: auto;
         object-fit: contain;
     }
