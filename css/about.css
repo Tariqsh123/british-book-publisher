@@ -1374,7 +1374,7 @@ span {
 }
 
 .main-header .top-bar .topbar-right img {
-    height: 66px;
+    height: 100%;
     max-width: max-content;
     width: 231px
 }
@@ -1508,10 +1508,13 @@ span {
 
     header .navbar .container-fluid img {
         display: block !important;
-        max-height: 57px;
+        /* max-height: 57px;
         max-width: 200px;
         -o-object-fit: scale-down;
-        object-fit: scale-down
+        object-fit: scale-down */
+        height: 70px;
+        width: auto;
+        object-fit: contain;
     }
 
     header .navbar .container-fluid .navbar-toggler:focus {
