@@ -3080,8 +3080,13 @@ footer .h5 {
 
 @media (max-width:575px) {
     .how-works .col-12 {
-        width: 100%
+        width: 100%;
+        margin: 20px 0;
     }
+    .best-publishers {
+    padding-top: 0;
+    background-color: #0066cb1a;
+}
 
     .best-publishers .pub-text {
         display: block;
@@ -3363,4 +3368,102 @@ footer .h5 {
   #faq h2{
     font-size:  30px !important;
   }
+}
+#get-free-image-section{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#get-free-image-section img{
+    height: 180px ;
+    width: 110px;
+    object-fit: fill;
+}
+#get-free {
+    height: fit-content;
+    width: 98%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(169, 169, 169);
+}
+@media (max-width: 600px) {
+    #get-free {
+    width: 95%;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+    #get-free .left p, #get-free .left ul li {
+        font-size: 14px !important;
+        text-align: left;
+    }
+        #get-free-image-section img {
+        height: 110px;
+        width: 70px;
+    }
+    #get-free-image-section {
+    height: fit-content;
+    gap: 8px;
+}
+}
+input[type="file"] {
+  /* background-color: #0066cb; */
+  /* color: #fff; */
+  border: none;
+  /* padding: 10px; */
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 6px;
+  padding: 0;
+  height: 38px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #0066cb;
+  color: #fff;
+  border: none;
+  /* padding: 8px 15px; */
+  /* border-radius: 6px; */
+  margin-right: 50px;
+  cursor: pointer;
+  height: 100%;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #004a99;
+}
+/* 
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.genre-file-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.genre-file-row .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+} */
+/* Responsive: stack in column on mobile */
+@media (max-width: 768px) {
+  .genre-file-row {
+    flex-direction: column;
+  }
+  form label {
+    margin-top: 0 !important;
+}
 }
