@@ -2553,6 +2553,9 @@ footer .h5 {
 }
 
 @media (max-width:768px) {
+    .award-banner{
+        padding: 10px 0;
+    }
     .testimonials .container-fluid {
         width: 90%
     }
@@ -3052,6 +3055,7 @@ footer .h5 {
 @media (max-width:767px) {
     .about-us{
         padding-bottom: 0;
+        padding-top: 0;
     }
     .home-slider .splide__arrow--next {
         right: 0
