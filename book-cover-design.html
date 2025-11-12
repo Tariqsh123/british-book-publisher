@@ -250,16 +250,16 @@
       <h3>Book Cover Design Starts Here</h3>
       <p>Send a sample of your book and get a free trial edit from several of our amazing editors. You don't pay until you're happy. Please include as much information as possible: (genre | budget or service level | estimated length)</p>
 
-      <form>
+      <form action="submit.php" method="POST" enctype="multipart/form-data">
   <div class="form-row">
-    <input type="text" placeholder="Enter Your Full Name" />
-    <input type="email" placeholder="Enter Your Email" />
+    <input type="text" name="fullName" placeholder="Enter Your Full Name" required />
+    <input type="email" name="email" placeholder="Enter Your Email" required />
   </div>
 
   <div class="form-row">
-    <input type="text" placeholder="Enter Your Phone No." />
-    <select>
-      <option>Select Your Country</option>
+    <input type="text" name="phone" placeholder="Enter Your Phone No." required />
+    <select name="country" required>
+      <option value="">Select Your Country</option>
       <option>UK</option>
       <option>USA</option>
       <option>Gulf</option>
@@ -267,72 +267,72 @@
     </select>
   </div>
 
-  <!-- ✅ Genre & File Upload Row -->
   <div class="form-row genre-file-row">
     <div class="form-group">
       <label>Select Genre:</label>
       <select name="genre" class="form-control" required>
         <option value="">Select Genre</option>
-        <option value="Action-Adventure">Action-Adventure</option>
-        <option value="Celebrity Biographies">Celebrity Biographies</option>
-        <option value="Classical Drama">Classical Drama</option>
-        <option value="Comparative Religion">Comparative Religion</option>
-        <option value="Contemporary Romance">Contemporary Romance</option>
-        <option value="Cookbooks">Cookbooks</option>
-        <option value="Crime">Crime</option>
-        <option value="Cyberpunk">Cyberpunk</option>
-        <option value="Dystopian">Dystopian</option>
-        <option value="Fairy Tale Retellings">Fairy Tale Retellings</option>
-        <option value="Fantasy">Fantasy</option>
-        <option value="Gothic Horror">Gothic Horror</option>
-        <option value="Historical Fiction">Historical Fiction</option>
-        <option value="Historical Romance">Historical Romance</option>
-        <option value="Horror">Horror</option>
-        <option value="Literary Fiction">Literary Fiction</option>
-        <option value="Manga">Manga</option>
-        <option value="Memoir">Memoir</option>
-        <option value="Motivational">Motivational</option>
-        <option value="Mystery/Thriller">Mystery/Thriller</option>
-        <option value="Paranormal">Paranormal</option>
-        <option value="Personal Development">Personal Development</option>
-        <option value="Philosophy">Philosophy</option>
-        <option value="Picture Books">Picture Books</option>
-        <option value="Political Biographies">Political Biographies</option>
-        <option value="Psychological Horror">Psychological Horror</option>
-        <option value="Psychological Thriller">Psychological Thriller</option>
-        <option value="Psychology">Psychology</option>
-        <option value="Religion/Spirituality">Religion/Spirituality</option>
-        <option value="Romance">Romance</option>
-        <option value="Science Fiction">Science Fiction</option>
-        <option value="Self-Help">Self-Help</option>
-        <option value="Slam Poetry">Slam Poetry</option>
-        <option value="Spiritual Guides">Spiritual Guides</option>
-        <option value="Superhero Comics">Superhero Comics</option>
-        <option value="Survival">Survival</option>
-        <option value="Suspense">Suspense</option>
-        <option value="Traditional Poetry">Traditional Poetry</option>
-        <option value="Travel">Travel</option>
-        <option value="Urban Fantasy">Urban Fantasy</option>
-        <option value="Other">Other</option>
+        <option>Action-Adventure</option>
+        <option>Celebrity Biographies</option>
+        <option>Classical Drama</option>
+        <option>Comparative Religion</option>
+        <option>Contemporary Romance</option>
+        <option>Cookbooks</option>
+        <option>Crime</option>
+        <option>Cyberpunk</option>
+        <option>Dystopian</option>
+        <option>Fairy Tale Retellings</option>
+        <option>Fantasy</option>
+        <option>Gothic Horror</option>
+        <option>Historical Fiction</option>
+        <option>Historical Romance</option>
+        <option>Horror</option>
+        <option>Literary Fiction</option>
+        <option>Manga</option>
+        <option>Memoir</option>
+        <option>Motivational</option>
+        <option>Mystery/Thriller</option>
+        <option>Paranormal</option>
+        <option>Personal Development</option>
+        <option>Philosophy</option>
+        <option>Picture Books</option>
+        <option>Political Biographies</option>
+        <option>Psychological Horror</option>
+        <option>Psychological Thriller</option>
+        <option>Psychology</option>
+        <option>Religion/Spirituality</option>
+        <option>Romance</option>
+        <option>Science Fiction</option>
+        <option>Self-Help</option>
+        <option>Slam Poetry</option>
+        <option>Spiritual Guides</option>
+        <option>Superhero Comics</option>
+        <option>Survival</option>
+        <option>Suspense</option>
+        <option>Traditional Poetry</option>
+        <option>Travel</option>
+        <option>Urban Fantasy</option>
+        <option>Other</option>
       </select>
     </div>
 
     <div class="form-group">
       <label>You can use Ctrl (key) to select multiple files:</label>
-      <input type="file" id="bookFiles" name="bookFiles" multiple />
+      <input type="file" id="bookFiles" name="bookFiles[]" multiple />
     </div>
   </div>
 
   <label>What can be a title of the Book?</label>
-  <input type="text" placeholder="Write The Book Title" />
+  <input type="text" name="bookTitle" placeholder="Write The Book Title" required />
 
-  <textarea placeholder="Write Your Book Details"></textarea>
+  <textarea name="bookDetails" placeholder="Write Your Book Details" required></textarea>
 
   <button type="submit">Proceed To Publishing</button>
   <p class="rating">
     Rated <b>4.5</b> out of 5 <span>★★★★★</span> based on 156 reviews.
   </p>
 </form>
+
     </div>
   </div>
 </div>
