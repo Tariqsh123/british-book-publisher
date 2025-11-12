@@ -2,26 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- ✅ Basic Meta Setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="author" content="Book Publisher UK">
+  <meta name="publisher" content="Book Publisher UK">
+
+  <!-- ✅ SEO Title & Description -->
+    <title>Children’s Book Publishing UK | Stories Brought to Life in 72 Hrs</title>
     <meta name="description" content="Bring your story to life with our affordable children’s book publishing services—professional editing, vivid illustrations, and global distribution in one place.">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- ✅ Keywords (optional for Bing, Yandex, etc.) -->
+  <meta name="keywords" content="self publishing UK, book publishing services UK, publish book UK, self publish book UK, editing services UK, book design UK, UK book distribution, 72-hour publishing, book printing UK, Amazon book publishing UK">
 
+  <!-- ✅ Canonical URL -->
+  <link rel="canonical" href="https://bookpublisheruk.co.uk/childrens-book-publishing.html">
 
+  <!-- ✅ Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Book Publisher UK">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://bookpublisheruk.co.uk/">
+  <meta property="og:title" content="Self-Publish a Book in the UK | Expert Editing & Fast Publishing">
+  <meta property="og:description" content="Unlock your author journey with Book Publisher UK — professional self-publishing, editing, and design services with 72-hour turnaround and global reach.">
+  <meta property="og:image" content="https://bookpublisheruk.co.uk/images/favicon-32x32.webp">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon-32x32.webp" type="image/x-icon">
+  <!-- ✅ Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BookPublisherUK">
+  <meta name="twitter:title" content="Self-Publish a Book in the UK | Book Publisher UK">
+  <meta name="twitter:description" content="Professional UK self-publishing services — editing, design, and worldwide distribution in just 72 hours.">
+  <meta name="twitter:image" content="https://bookpublisheruk.co.uk/images/favicon-32x32.webp">
 
-    <title>Children’s Book Publishing UK | Stories Brought to Life in 72 Hrs</title>
+  <!-- ✅ Schema Markup (Organization + WebSite for Google Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Book Publisher UK",
+    "url": "https://bookpublisheruk.co.uk",
+    "logo": "https://bookpublisheruk.co.uk/images/british-book-publishers.webp",
+  }
+  </script>
 
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/service-page.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://bookpublisheruk.co.uk/",
+    "name": "Book Publisher UK",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bookpublisheruk.co.uk/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ✅ Favicons -->
+  <link rel="shortcut icon" href="https://bookpublisheruk.co.uk/images/favicon-32x32.webp" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://bookpublisheruk.co.uk/images/favicon-32x32.webp">
+
+  <!-- ✅ CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/service-page.css">
+
+  <!-- ✅ Performance Optimizations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -354,7 +411,7 @@
     <!-- Right Side (Image Collage) -->
     <div class="publishing-company-images">
       <div class="publishing-company-row publishing-company-two">
-        <img src="images/sample-image-1.webp" title="art-book-publishing-sample-1" loading="lazy">
+        <img src="images/sample-image-1.webp" title="art-book-publishing-sample-1" alt="art-book-publishing-sample-1" loading="lazy">
         <img src="images/sample-image-2.webp" alt="art-book-publishing-sample-2" title="art-book-publishing-sample-2" loading="lazy">
       </div>
       <div class="publishing-company-row publishing-company-one">
@@ -612,74 +669,123 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(function(){
-    const $track = $(".carousel-track");
-    let $cards = $(".review-card");
-    let cardWidth = $cards.outerWidth(true);
-    let index = 1; 
-    let isDragging = false, startX, startTranslate, currentX;
-    let animationFrame;
-    $track.prepend($cards.last().clone());
-    $track.append($cards.first().clone());
-    $cards = $(".review-card");
-    cardWidth = $cards.outerWidth(true);
-    setTranslate(-cardWidth * index);
-    function getTranslateX() {
-        const style = window.getComputedStyle($track[0]);
-        const matrix = new WebKitCSSMatrix(style.transform);
-        return matrix.m41;
+$(function() {
+  const $track = $(".carousel-track");
+  const $cards = $(".review-card");
+  const $container = $(".carousel-container");
+
+  let interval;
+  let isPaused = false;
+  let isDragging = false;
+  let startX = 0;
+  let moveX = 0;
+  let startTransform = 0;
+
+  // --- Clone first & last card for infinite loop ---
+  const $firstClone = $cards.first().clone();
+  const $lastClone = $cards.last().clone();
+  $track.append($firstClone);
+  $track.prepend($lastClone);
+
+  const $allCards = $(".review-card"); // now includes clones
+  let index = 1; // start at real first card
+
+  function updateTransform(animate = true) {
+    const containerCenter = $container.outerWidth() / 2;
+    const card = $allCards.eq(index)[0];
+    const trackRect = $track[0].getBoundingClientRect();
+    const cardRect = card.getBoundingClientRect();
+
+    const cardCenter = cardRect.left - trackRect.left + cardRect.width / 2;
+    const translateX = containerCenter - cardCenter;
+
+    if (animate) $track.css("transition", "transform 0.5s ease");
+    else $track.css("transition", "none");
+
+    $track.css("transform", `translateX(${translateX}px)`);
+  }
+
+  function nextSlide() {
+    if (isPaused) return;
+    index++;
+    updateTransform();
+    // Handle clones for infinite loop
+    setTimeout(() => {
+      if (index >= $allCards.length - 1) {
+        index = 1; // jump to real first
+        updateTransform(false);
+      }
+    }, 510); // slightly more than transition
+  }
+
+  function prevSlide() {
+    if (isPaused) return;
+    index--;
+    updateTransform();
+    setTimeout(() => {
+      if (index <= 0) {
+        index = $allCards.length - 2; // jump to real last
+        updateTransform(false);
+      }
+    }, 510);
+  }
+
+  function startAutoPlay() {
+    interval = setInterval(nextSlide, 3000);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(interval);
+  }
+
+  // --- Drag / swipe support ---
+  $track.on("mousedown touchstart", function(e) {
+    stopAutoPlay();
+    isDragging = true;
+    startX = e.pageX || e.originalEvent.touches[0].pageX;
+    startTransform = getTranslateX($track);
+    $track.css("transition", "none");
+  });
+
+  $(document).on("mousemove touchmove", function(e) {
+    if (!isDragging) return;
+    moveX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
+    e.preventDefault();
+    $track.css("transform", `translateX(${startTransform + moveX}px)`);
+  });
+
+  $(document).on("mouseup touchend", function() {
+    if (!isDragging) return;
+    isDragging = false;
+    if (Math.abs(moveX) > $allCards.eq(0).outerWidth() / 4) {
+      if (moveX < 0) nextSlide();
+      else prevSlide();
+    } else {
+      updateTransform();
     }
-    function setTranslate(x, withTransition = false) {
-        $track.css("transition", withTransition ? "transform 0.3s ease" : "none");
-        $track.css("transform", `translateX(${x}px)`);
-    }
-    function snapToCard() {
-        let moveX = getTranslateX();
-        let dragDistance = moveX - startTranslate;
-        let threshold = cardWidth / 4;
-        if(dragDistance < -threshold) index++;
-        else if(dragDistance > threshold) index--;
-        setTranslate(-index * cardWidth, true);
-        $track.one("transitionend", function(){
-            if(index === 0){ 
-                index = $cards.length - 2;
-                setTranslate(-index * cardWidth);
-            } 
-            else if(index === $cards.length - 1){ 
-                index = 1;
-                setTranslate(-index * cardWidth);
-            }
-        });
-    }
-    $track.on("mousedown touchstart", function(e){
-        isDragging = true;
-        startX = e.pageX || e.originalEvent.touches[0].pageX;
-        startTranslate = getTranslateX();
-        cancelAnimationFrame(animationFrame);
-    });
-    $(document).on("mousemove touchmove", function(e){
-        if(!isDragging) return;
-        currentX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
-        e.preventDefault(); 
-        function update() {
-            setTranslate(startTranslate + currentX);
-            if(isDragging) animationFrame = requestAnimationFrame(update);
-        }
-        cancelAnimationFrame(animationFrame);
-        animationFrame = requestAnimationFrame(update);
-    });
-    $(document).on("mouseup touchend", function(){
-        if(!isDragging) return;
-        isDragging = false;
-        cancelAnimationFrame(animationFrame);
-        snapToCard();
-    });
-    $(window).on("resize", function(){
-        cardWidth = $(".review-card").outerWidth(true);
-        setTranslate(-index * cardWidth);
-    });
+    moveX = 0;
+    startAutoPlay();
+  });
+
+  function getTranslateX($el) {
+    const style = window.getComputedStyle($el[0]);
+    const matrix = new DOMMatrixReadOnly(style.transform);
+    return matrix.m41;
+  }
+
+  $(window).on("resize", updateTransform);
+
+  $(".carousel-container").hover(
+    () => { isPaused = true; stopAutoPlay(); },
+    () => { isPaused = false; startAutoPlay(); }
+  );
+
+  // Initialize
+  updateTransform(false);
+  startAutoPlay();
 });
 </script>
+
 
 
 
@@ -865,7 +971,7 @@ $(function(){
         <div class="container">
             <div class="row gy-4">
                 <div class="col-12 col-lg-4 col-md-12">
-                    <img src="images/footer-logo.webp"
+                    <img src="images/british-book-publishers.webp"
                         class="img-fluid mb-4" alt="logo" title="logo" loading="lazy">
                     <p>A recognised name in the world of literature that will never let you and your publication down.</p>
                     <span class="p-text">TALK TO YOUR PUBLISHING CONSULTANT</span>
@@ -983,61 +1089,7 @@ $(function(){
 
     <!-- <script> window.addEventListener('load', () => setTimeout(function () { window.__lc = window.__lc || {}; window.__lc.license = 17202918;; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice)) }, 4000)); </script> -->
     <style>
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: normal;
-            font-weight: 500;
-            src: url("fonts/urbanist-v15-latin-500.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: normal;
-            font-weight: 600;
-            src: url("fonts/urbanist-v15-latin-600.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: italic;
-            font-weight: 600;
-            src: url("fonts/urbanist-v15-latin-600italic.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: normal;
-            font-weight: 700;
-            src: url("fonts/urbanist-v15-latin-700.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: normal;
-            font-weight: 800;
-            src: url("fonts/urbanist-v15-latin-800.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Urbanist";
-            font-style: normal;
-            font-weight: 900;
-            src: url("fonts/urbanist-v15-latin-900.woff2") format("woff2");
-        }
-
-        @font-face {
-            font-display: swap;
-            font-family: "Noto Sans";
-            font-style: italic;
-            font-weight: 600;
-            src: url("fonts/noto-sans-v36-latin-600italic.woff2") format("woff2");
-        }
+        @font-face{font-display:swap;font-family:Urbanist;font-style:normal;font-weight:500;src:url("fonts/urbanist-v15-latin-500.woff2") format("woff2")}@font-face{font-display:swap;font-family:Urbanist;font-style:normal;font-weight:600;src:url("fonts/urbanist-v15-latin-600.woff2") format("woff2")}@font-face{font-display:swap;font-family:Urbanist;font-style:italic;font-weight:600;src:url("fonts/urbanist-v15-latin-600italic.woff2") format("woff2")}@font-face{font-display:swap;font-family:Urbanist;font-style:normal;font-weight:700;src:url("fonts/urbanist-v15-latin-700.woff2") format("woff2")}@font-face{font-display:swap;font-family:Urbanist;font-style:normal;font-weight:800;src:url("fonts/urbanist-v15-latin-800.woff2") format("woff2")}@font-face{font-display:swap;font-family:Urbanist;font-style:normal;font-weight:900;src:url("fonts/urbanist-v15-latin-900.woff2") format("woff2")}@font-face{font-display:swap;font-family:"Noto Sans";font-style:italic;font-weight:600;src:url("fonts/noto-sans-v36-latin-600italic.woff2") format("woff2")}
     </style>
 
 
